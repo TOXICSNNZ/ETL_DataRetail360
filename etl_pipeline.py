@@ -9,10 +9,10 @@ from dotenv import load_dotenv
 # 1. CONFIGURACIÓN Y VARIABLES DE ENTORNO
 load_dotenv()
 
-SERVER = os.getenv("DB_SERVER", "localhost")
-DRIVER = os.getenv("DB_DRIVER", "ODBC Driver 17 for SQL Server")
-DATABASE_ORIGEN = os.getenv("DB_ORIGEN", "DataRetail360_Origen")
-DATABASE_DW = os.getenv("DB_DW", "DataRetail360_DW")
+SERVER = os.getenv("DB_SERVER")
+DRIVER = os.getenv("DB_DRIVER")
+DATABASE_ORIGEN = os.getenv("DB_ORIGEN")
+DATABASE_DW = os.getenv("DB_DW")
 
 db_user = os.getenv("DB_USER")
 db_pass = os.getenv("DB_PASSWORD")
